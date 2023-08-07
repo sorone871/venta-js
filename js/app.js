@@ -13,6 +13,7 @@ function cargarEventListeners() {
 
     vaciarCarrito.addEventListener('click', () =>{
         articulosCarrito = [];
+        
         limpiarHTML();
     });
 }
@@ -24,6 +25,11 @@ function agregarCurso(e) {
     if (e.target.classList.contains('agregar-carrito')) {
         const cursoSeleccionado=e.target.parentElement.parentElement;
         leerDatosCurso(cursoSeleccionado);
+        swal({
+            title: 'Exito',
+            text: 'Se agrego al carrito',
+            icon: 'success'
+        });
     }
 }
 //Eliminar Curso
