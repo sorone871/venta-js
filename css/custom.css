@@ -81,6 +81,7 @@ ul {
 .contenido-hero form #buscador {
     height: 50px;
     margin-bottom: 0;
+    color: black;
 }
 .contenido-hero form .submit-buscador {
     position: absolute;
@@ -95,6 +96,7 @@ ul {
     background-position: right center;
     background-repeat: no-repeat;
     border:none;
+    
 }
 
 
@@ -193,3 +195,15 @@ text-decoration: none;
     margin: 0;
     cursor: pointer;
 }
+@media screen and (max-width: 900px){
+
+    .nav3 {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+}
+
